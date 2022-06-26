@@ -1,0 +1,34 @@
+#%RAML 1.0
+title: CountryList
+version: v1
+
+description: These APIs are used to fetch common data to all APIs in the ABC System. 
+mediaType: [application/json]
+/master/country:
+  get:
+    description: This API is used to fetch Country List in ABC
+    responses:
+      200:
+        body:
+            example: !include /example/response1.json
+/master/1/state:
+  get:
+    description: This API is used to fetch State List for a Country in ABC.
+    responses:
+      200:
+        body:
+            example: !include /example/response2.json
+/masters:
+  get:
+    description: This API is used to fetch Master Data List in ABC.
+    responses:
+      200:
+        body:
+              example: !include /example/response3.json
+
+            
+    
+              
+
+              
+            
